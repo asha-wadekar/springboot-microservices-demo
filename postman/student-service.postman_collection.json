@@ -1,0 +1,153 @@
+{
+	"info": {
+		"_postman_id": "7e334e0d-df02-46d3-b024-e063cfd7154b",
+		"name": "student-service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetAllStudents",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/students",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students"
+					]
+				}
+			},
+			"response": [
+				{
+					"studentId": 101,
+					"studentName": "Vihaan Birla",
+					"grade": "B",
+					"mobileNumber": "8989890090",
+					"schoolName": "Sanjivanee school"
+				},
+				{
+					"studentId": 102,
+					"studentName": "Asha Birla",
+					"grade": "A",
+					"mobileNumber": "8989898979",
+					"schoolName": "Sanjivanee school"
+				},
+				{
+					"studentId": 103,
+					"studentName": "Pushkar Birla",
+					"grade": "A",
+					"mobileNumber": "8989898979",
+					"schoolName": "Sanjivanee school"
+				}
+			]
+		},
+		{
+			"name": "Add Student",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\": 101,\r\n    \"studentName\": \"Asha Wadekar\",\r\n    \"grade\": \"A\",\r\n    \"mobileNumber\": \"8989898979\",\r\n    \"schoolName\": \"Sanjivanee school\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/students/add",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"add"
+					]
+				}
+			},
+			"response": {
+				"studentId": 103,
+				"studentName": "Pushkar Birla",
+				"grade": "A",
+				"mobileNumber": "8989898979",
+				"schoolName": "Sanjivanee school"
+			}
+		},
+		{
+			"name": "getStudentById",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/students/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"101"
+					]
+				}
+			},
+			"response": {
+				"studentId": 101,
+				"studentName": "Vihaan Birla",
+				"grade": "A",
+				"mobileNumber": "8989898979",
+				"schoolName": "Sanjivanee school"
+			}
+		},
+		{
+			"name": "UpdateStudent",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "default"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"studentId\": 101,\r\n    \"studentName\": \"Vihaan Birla\",\r\n    \"grade\": \"B\",\r\n    \"mobileNumber\": \"8989890090\",\r\n    \"schoolName\": \"Sanjivanee school\"\r\n}"
+				},
+				"url": {
+					"raw": "http://localhost:8080/api/students/update/101",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"students",
+						"update",
+						"101"
+					]
+				}
+			},
+			"response": {
+				"studentId": 101,
+				"studentName": "Vihaan Birla",
+				"grade": "B",
+				"mobileNumber": "8989890090",
+				"schoolName": "Sanjivanee school"
+			}
+		}
+	]
+}
