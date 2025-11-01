@@ -36,7 +36,9 @@ Each service is independently runnable and exposes RESTful APIs with Swagger doc
 
 **Postman Collections**
 You can test the APIs using Postman. Import the following sample requests:
+
 **Student Service**
+
 	- POST /api/students/add — Add a student
 	
 	- GET /api/students/{id} — Get student by ID
@@ -46,6 +48,7 @@ You can test the APIs using Postman. Import the following sample requests:
 	- GET /api/students -Get all students
 
 **Fees Service**
+
 	- POST /api/fees —Submit fee payment
 	
 	- GET /api/fees/student/{studentId} — Get fee history for student
