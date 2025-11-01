@@ -16,6 +16,7 @@ Each service is independently runnable and exposes RESTful APIs with Swagger doc
 
 
 **2. Fees Service**
+
 	## Run Fees Service
 	
 	cd fees-service
@@ -23,9 +24,12 @@ Each service is independently runnable and exposes RESTful APIs with Swagger doc
 
 	
 **API Documentation (Swagger)**
+
 	Both services use Springdoc OpenAPI for auto-generated Swagger documentation.
-	- Student Service: http://localhost:8080/swagger-ui/index.html
-	- Fees Service: http://localhost:9090/swagger-ui/index.html
+	
+	- **Student Service:** http://localhost:8080/swagger-ui/index.html
+	
+	- **Fees Service:** http://localhost:9090/swagger-ui/index.html
 
 
 **Postman Collections**
@@ -42,17 +46,27 @@ Fees Service
 	- GET /api/fees/{id}  —Get receipt by receipt id.
 	
 **Tech Stack**
+
 	- Java 21
+	
 	- Spring Boot 3.5.7
+	
 	- Spring Web – for building RESTful APIs
+	
 	- Spring Data JPA – for database access
+	
 	- H2 Database – in-memory DB for testing
+	
 	- RestTemplate – for inter-service HTTP calls
+	
 	- Resilience4j Circuit Breaker – for fault tolerance and fallback handling
+	
 	- Springdoc OpenAPI – for Swagger documentation
+	
 	- JUnit5 + Mockito – for unit testing
 
 **Testing**
+
 	Run unit tests with:
 	mvn test
 
