@@ -27,9 +27,11 @@ Each service is independently runnable and exposes RESTful APIs with Swagger doc
 
 	Both services use Springdoc OpenAPI for auto-generated Swagger documentation.
 	
-	- **Student Service:** http://localhost:8080/swagger-ui/index.html
+	- **Student Service:** 
+	http://localhost:8080/swagger-ui/index.html
 	
-	- **Fees Service:** http://localhost:9090/swagger-ui/index.html
+	- **Fees Service:** 
+	http://localhost:9090/swagger-ui/index.html
 
 
 **Postman Collections**
